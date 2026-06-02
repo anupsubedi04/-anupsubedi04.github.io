@@ -6,41 +6,106 @@
 <title>Anup Subedi | Portfolio</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
+*{
     margin:0;
     padding:0;
-    background:#f4f6f9;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f7fb;
     color:#333;
+    line-height:1.7;
 }
 
 header{
-    background:#1f4e79;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
     color:white;
     text-align:center;
-    padding:40px;
+    padding:60px 20px;
 }
 
-sectionsection{
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.section{
     background:white;
-    margin:25px auto;
-    padding:25px;
+    padding:30px;
+    margin-bottom:25px;
     border-radius:15px;
-    max-width:1000px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-section:hover{
-    transform:translateY(-5px);
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-left:5px solid #2a5298;
+    padding-left:10px;
 }
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
+}
+
+.skill{
+    background:#eef4ff;
+    padding:12px;
+    border-radius:8px;
+    font-weight:500;
+}
+
 footer{
-    footer{
-    text-align:center;
-    background:#0f2740;
+    background:#1e3c72;
     color:white;
+    text-align:center;
     padding:20px;
-    margin-top:30px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+header h1{
+    font-size:2.2rem;
+}
+
+.profile-img{
+    width:150px;
+    height:150px;
+}
+
 }
 </style>
 
@@ -48,100 +113,114 @@ footer{
 <body>
 
 <header>
+    <img src="AEC21063-4A77-44FC-9368-B362090CC192.png" alt="Anup Subedi" class="profile-img">
+
     <h1>Anup Subedi</h1>
-    <h3>Bachelor of Business Studies (BBS) Student</h3>
+
+    <p>Bachelor of Business Studies (BBS) Student</p>
 </header>
 
-<section>
-    <h2>About Me</h2>
+<div class="container">
 
-    <p>
+    <div class="section">
+        <h2>About Me</h2>
+
+        <p>
         I am a student of Bachelor of Business Studies (BBS) at Shaheed Smarak College, Bharatpur, Chitwan. The BBS program has provided me with a strong foundation in accounting, finance, economics, business management, marketing, and organizational leadership.
-    </p>
+        </p>
 
-    <p>
+        <br>
+
+        <p>
         Through my academic journey, I have developed analytical thinking, communication skills, leadership qualities, problem-solving abilities, and an understanding of how businesses operate in real-world environments. Studying BBS has helped me gain knowledge of financial reporting, budgeting, business decision-making, entrepreneurship, and management practices.
-    </p>
+        </p>
 
-    <p>
+        <br>
+
+        <p>
         The program prepares students for diverse career opportunities in banking, accounting, finance, administration, business management, entrepreneurship, and the corporate sector. It also helps students build confidence, professionalism, and the ability to work effectively in teams and organizational settings.
-    </p>
+        </p>
 
-    <p>
+        <br>
+
+        <p>
         My goal is to continuously improve my knowledge, strengthen my professional skills, and build a successful career in the business field. I am passionate about learning, personal development, and applying business knowledge to create positive impacts in organizations and society.
-    </p>
-</section>
+        </p>
+    </div>
 
-<section>
-    <h2>Education</h2>
+    <div class="section">
+        <h2>Education</h2>
 
-    <h3>Bachelor of Business Studies (BBS)</h3>
+        <h3>Bachelor of Business Studies (BBS)</h3>
 
-    <p>
-        Shaheed Smarak College<br>
-        Bharatpur-19, Chitwan, Nepal
-    </p>
+        <p><strong>Shaheed Smarak College</strong></p>
 
-    <p>
-        Studying business-related subjects including Accounting, Finance,
-        Economics, Business Communication, Taxation, Marketing,
-        Entrepreneurship, and Management.
-    </p>
-</section>
+        <p>Bharatpur-19, Chitwan, Nepal</p>
 
-<section>
-    <h2>Skills</h2>
+        <br>
 
-    <ul>
-        <li>Financial Accounting</li>
-        <li>Business Communication</li>
-        <li>Economics</li>
-        <li>Management Principles</li>
-        <li>Microsoft Excel</li>
-        <li>Report Writing</li>
-        <li>Teamwork & Collaboration</li>
-        <li>Problem Solving</li>
-        <li>Leadership</li>
-        <li>Time Management</li>
-    </ul>
-</section>
+        <p>
+        Studying business-related subjects including Accounting, Finance, Economics, Business Communication, Taxation, Marketing, Entrepreneurship, and Management.
+        </p>
+    </div>
 
-<section>
-    <h2>What I Have Learned</h2>
+    <div class="section">
+        <h2>Skills</h2>
 
-    <ul>
-        <li>Preparation of Journal Entries and Ledger Accounts</li>
-        <li>Financial Statement Preparation</li>
-        <li>Business Management Principles</li>
-        <li>Financial Analysis and Decision Making</li>
-        <li>Business Communication Skills</li>
-        <li>Entrepreneurship and Business Planning</li>
-        <li>Organizational Behaviour</li>
-        <li>Basic Banking and Finance Concepts</li>
-    </ul>
-</section>
+        <div class="skills-grid">
+            <div class="skill">Financial Accounting</div>
+            <div class="skill">Business Communication</div>
+            <div class="skill">Economics</div>
+            <div class="skill">Management Principles</div>
+            <div class="skill">Microsoft Excel</div>
+            <div class="skill">Report Writing</div>
+            <div class="skill">Teamwork & Collaboration</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Leadership</div>
+            <div class="skill">Time Management</div>
+        </div>
+    </div>
 
-<section>
-    <h2>Career Interests</h2>
+    <div class="section">
+        <h2>What I Have Learned</h2>
 
-    <ul>
-        <li>Accounting</li>
-        <li>Banking</li>
-        <li>Finance</li>
-        <li>Business Administration</li>
-        <li>Entrepreneurship</li>
-        <li>Corporate Management</li>
-    </ul>
-</section>
+        <ul>
+            <li>Preparation of Journal Entries and Ledger Accounts</li>
+            <li>Financial Statement Preparation</li>
+            <li>Business Management Principles</li>
+            <li>Financial Analysis and Decision Making</li>
+            <li>Business Communication Skills</li>
+            <li>Entrepreneurship and Business Planning</li>
+            <li>Organizational Behaviour</li>
+            <li>Basic Banking and Finance Concepts</li>
+        </ul>
+    </div>
 
-<section>
-    <h2>Contact</h2>
+    <div class="section">
+        <h2>Career Interests</h2>
 
+        <ul>
+            <li>Accounting</li>
+            <li>Banking</li>
+            <li>Finance</li>
+            <li>Business Administration</li>
+            <li>Entrepreneurship</li>
+            <li>Corporate Management</li>
+        </ul>
+    </div>
 
-</section>
+    <div class="section">
+        <h2>Contact</h2>
+
+        <p>
+        Thank you for visiting my portfolio. Feel free to connect and collaborate.
+        </p>
+    </div>
+
+</div>
 
 <footer>
-    <p>© 2026 Anup Subedi | Portfolio Website</p>
+    © 2026 Anup Subedi | Portfolio Website
 </footer>
 
 </body>
